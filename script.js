@@ -73,7 +73,7 @@ document.getElementById("form-contato").addEventListener("submit", function(even
      // Quiz
     document.getElementById("quiz_form").addEventListener("submit", function(event) {
         event.preventDefault();
-        const respostas = { q1: "b", q2: "a", q3: "c", q4: "c", q5: "d", q6: "c"};
+        const respostas = { q1: "b", q2: "a", q3: "c", q4: "c", q5: "d", q6: "c", q7: "b" };
         let acertos = 0;
         for (let i in respostas) {
             const respostaUsuario = document.querySelector(`input[name="${i}"]:checked`);
