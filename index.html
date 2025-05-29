@@ -1,192 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GS Web Dev</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>GS Web Dev</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <input id="toggle" type="checkbox" />
-<label for="toggle" class="hamburger">
-    <div class="top-bun"></div>
-    <div class="meat"></div>
-    <div class="bottom-bun"></div>
-</label>
-<div class="nav">
-    <div class="nav-wrapper">
-        <nav>
-            <a href="#problema2">Problema</a>
-            <a href="#tecnologia2">Tecnologias</a>
-            <a href="#objetivos2">Objetivos</a>
-            <a href="#publico2">Público-Alvo</a>
-            <a href="#beneficios2">Benefícios</a>
-            <a href="#uso2">Uso Diário</a>
-            <a href="#slideshow2">SlideShow</a>
-            <a href="#quiz2">Quiz</a>
-            <a href="#contato2">Contato</a>
-        </nav>
-    </div>
-</div>
-  <header>
-    <nav>
-      <ul>
-        <li><a id="problema" href="#problema2">Problema</a></li>
-        <li><a id="tecnologia" href="#tecnologia2">Tecnologias</a></li>
-        <li><a id="objetivos" href="#objetivos2">Objetivos</a></li>
-        <li><a id="publico" href="#publico2">Público-Alvo</a></li>
-        <li><a id="beneficios" href="#beneficios2">Benefícios</a></li>
-        <li><a id="uso" href="#uso2">Uso Diário</a></li>
-        <li><a id="slideshow" href="#slideshow2">SlideShow</a></li>
-        <li><a id="quiz" href="#quiz2">Quiz</a></li>
-        <li><a id="contato" href="#contato2">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="problema2">
-      <h2>O Problema</h2>
-      <p>Enchentes causam tragédias recorrentes no Brasil, afetando milhões e causando perdas humanas e econômicas severas.</p>
-      <p>Faltam sistemas eficazes de alerta e gestão para proteger as populações vulneráveis.</p>
-      <img id="enchente" src="images/enchente.jpg" alt="Rua alagada com casas submersas" />
-    </section>
-
-    <section id="tecnologia2">
-      <h2>Tecnologias Usadas</h2>
-      <p>Utilizamos IA, sensoriamento remoto e sensores IoT.</p>
-      <p>O sistema oferece mapas de risco, alertas em tempo real e rotas de fuga baseadas em dados de tráfego.</p>
-    </section>
-
-    <section id="objetivos2">
-      <h2>Objetivos</h2>
-      <p>Salvar vidas por meio da antecipação de desastres e melhorar a resposta emergencial das autoridades locais.</p>
-      <p>Reduzir prejuízos econômicos com planejamento urbano e alertas eficazes em tempo real.</p>
-      <img id="objetivos-img" src="images/objetivos.jpg" alt="Equipe de resgate resgatando os cidadãos" />
-    </section>
-
-    <section id="publico2">
-      <h2>Público-Alvo</h2>
-      <p>População em áreas de risco, Defesa Civil, prefeituras e ONGs atuando em gestão de emergências urbanas.</p>
-      <p>Também impacta cidadãos com interesse em segurança urbana e prevenção de riscos hidrológicos.</p>
-    </section>
-
-    <section id="beneficios2">
-      <h2>Benefícios</h2>
-      <p>Redução de impactos com alertas personalizados, rotas de fuga e dados integrados para resposta rápida.</p>
-      <p>Inclusão digital com aplicativo offline, integração com WhatsApp e comunicação acessível.</p>
-    </section>
-
-    <section id="uso2">
-      <h2>Uso no Dia a Dia</h2>
-      <p>Usuários recebem alertas antecipados, veem mapas atualizados e registram ocorrências de forma colaborativa.</p>
-      <p>Prefeituras acessam dashboards com dados em tempo real e gerenciam planos de evacuação.</p>
-    </section>
-  
-
-  <section id="slideshow2">
-    <h2>SlideShow</h2>
-    <div class="slideshow-container">
-        <img class="slide" src="images/slide1.jpg">
-        <img class="slide" src="images/slide2.jpg">
-        <img class="slide" src="images/slide3.jpg">
-        <button class="prev" onclick="plusSlides(-1)" aria-label="Anterior">&#10094;</button>
-        <button class="next" onclick="plusSlides(1)" aria-label="Próximo">&#10095;</button>
-        <div class="dots" style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+    <label for="toggle" class="hamburger">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+    </label>
+    <div class="nav">
+        <div class="nav-wrapper">
+            <nav>
+                <a href="#problema2">Problema</a>
+                <a href="#tecnologia2">Tecnologias</a>
+                <a href="#objetivos2">Objetivos</a>
+                <a href="#publico2">Público-Alvo</a>
+                <a href="#beneficios2">Benefícios</a>
+                <a href="#uso2">Uso Diário</a>
+                <a href="#slideshow2">SlideShow</a>
+                <a href="#quiz2">Quiz</a>
+                <a href="#contato2">Contato</a>
+            </nav>
         </div>
     </div>
-</section>
-
-<section id="quiz2">
-    <h2>Quiz</h2>
-    <form id="quiz_form">
-        <p>1. Quantas inundações foram registradas no Brasil entre 1991 e 2022?</p>
-        <p><input type="radio" name="q1" value="a"> 2 mil</p>
-        <p><input type="radio" name="q1" value="b"> 21 mil</p>
-        <p><input type="radio" name="q1" value="c"> 8 mil</p>
-        <p><input type="radio" name="q1" value="d"> 53 mil</p><br/>
-
-        <p>2. Qual foi o estado mais afetado por enchentes em 2024 até maio?</p>
-        <p><input type="radio" name="q2" value="a"> Rio Grande do Sul</p>
-        <p><input type="radio" name="q2" value="b"> São Paulo</p>
-        <p><input type="radio" name="q2" value="c"> Rio de Janeiro</p>
-        <p><input type="radio" name="q2" value="d"> Amazonas</p><br/>
-
-        <p>3. Qual é o prejuízo médio anual estimado pelo Banco Mundial com desastres naturais no Brasil?</p>
-        <p><input type="radio" name="q3" value="a"> R$ 10 bilhões</p>
-        <p><input type="radio" name="q3" value="b"> R$ 7 bilhões</p>
-        <p><input type="radio" name="q3" value="c"> R$ 8 bilhões</p>
-        <p><input type="radio" name="q3" value="d"> R$ 15 bilhões</p><br/>
-
-        <p>4. Qual é a principal causa de mortes por desastres naturais no Brasil?</p>
-        <p><input type="radio" name="q4" value="a"> Secas</p>
-        <p><input type="radio" name="q4" value="b"> Deslizamentos de terra</p>
-        <p><input type="radio" name="q4" value="c"> Enchentes</p>
-        <p><input type="radio" name="q4" value="d"> Furacões</p><br/>
-
-        <p>5. Qual região brasileira que mais sofre com enchentes?</p>
-        <p><input type="radio" name="q5" value="a"> Norte</p>
-        <p><input type="radio" name="q5" value="b"> Sul</p>
-        <p><input type="radio" name="q5" value="c"> Centro-Oeste</p>
-        <p><input type="radio" name="q5" value="d"> Sudeste</p><br/>
-
-        <p>6. O que é uma enchente?</p>
-        <p><input type="radio" name="q6" value="a"> Aumento da temperatura em regiões urbanas</p>
-        <p><input type="radio" name="q6" value="b"> Movimento de placas tectônicas</p>
-        <p><input type="radio" name="q6" value="c"> Acúmulo excessivo de água que transborda rios ou alaga ruas</p>
-        <p><input type="radio" name="q6" value="d"> Formação de ventos fortes no litoral</p><br/>
-
-        <p>7. Qual cidade brasileira é frequentemente afetada por enchentes, especialmente no verão?</p>
-        <p><input type="radio" name="q7" value="a"> Brasília</p>
-        <p><input type="radio" name="q7" value="b"> São Paulo</p>
-        <p><input type="radio" name="q7" value="c"> Rio de Janeiro</p>
-        <p><input type="radio" name="q7" value="d"> Salvador</p><br/>
-
-        <p>8. Qual é o papel das bacias hidrográficas no controle de enchentes?</p>
-        <p><input type="radio" name="q8" value="a"> Drenar a água das chuvas para rios e oceanos</p>
-        <p><input type="radio" name="q8" value="b"> Ajudam a armazenar água e controlar o fluxo</p>
-        <p><input type="radio" name="q8" value="c"> Impedir a formação de rios</p>
-        <p><input type="radio" name="q8" value="d"> Controlar a erosão do solo</p><br/>
-
-        <p>9. Qual das seguintes ações humanas contribui para o aumento das enchentes?</p>
-        <p><input type="radio" name="q9" value="a"> Construção de barragens</p>
-        <p><input type="radio" name="q9" value="b"> Reciclagem de lixo</p>
-        <p><input type="radio" name="q9" value="c"> Descarte irregular de lixo em bueiros</p>
-        <p><input type="radio" name="q9" value="d"> Construção de reservatórios</p><br/>
-
-        <p>10. A urbanização desordenada contribui para as enchentes porque:</p>
-        <p><input type="radio" name="q10" value="a"> Reduz o escoamento natural da água</p>
-        <p><input type="radio" name="q10" value="b"> Melhora a drenagem natural</p>
-        <p><input type="radio" name="q10" value="c"> Reduz a quantidade de água nos rios</p>
-        <p><input type="radio" name="q10" value="d"> Aumenta o número de habitantes</p><br/>
-
-        <button type="submit">Enviar</button>
-    </form>
-    <p id="resultado"></p>
-</section>
-
-<section id="contato2">
-    <h2>Entre em Contato</h2>
-    <form id="form-contato">
-        <p>Nome: <input type="text" name="nome" id="nome" required></p>
-        <p>Email: <input type="email" name="email" id="email" required></p>
-        <p>Mensagem:<br/>
-            <textarea name="mensagem" id="mensagem" rows="4" required></textarea>
-        </p>
-        <button type="submit">Enviar</button>
-    </form>
-    <p id="form-msg"></p>
-</section>
-
-<button onclick="trocarFundo()">Trocar Fundo</button>
-</main>
-  <footer>
-    <p>© 2025 HidroSafe. Todos os direitos reservados.</p>
-  </footer>
-<script src="script.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a id="problema" href="#problema2">Problema</a></li>
+                <li><a id="tecnologia" href="#tecnologia2">Tecnologias</a></li>
+                <li><a id="objetivos" href="#objetivos2">Objetivos</a></li>
+                <li><a id="publico" href="#publico2">Público-Alvo</a></li>
+                <li><a id="beneficios" href="#beneficios2">Benefícios</a></li>
+                <li><a id="uso" href="#uso2">Uso Diário</a></li>
+                <li><a id="slideshow" href="#slideshow2">SlideShow</a></li>
+                <li><a id="quiz" href="#quiz2">Quiz</a></li>
+                <li><a id="contato" href="#contato2">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="problema2">
+            <h2>O Problema</h2>
+            <p>Enchentes causam tragédias recorrentes no Brasil, afetando milhões e causando perdas humanas e econômicas severas.</p>
+            <p>Faltam sistemas eficazes de alerta e gestão para proteger as populações vulneráveis.</p>
+            <img id="enchente" src="images/enchente.jpg" alt="Rua alagada com casas submersas" />
+        </section>
+        <section id="tecnologia2">
+            <h2>Tecnologias Usadas</h2>
+            <p>Utilizamos IA, sensoriamento remoto e sensores IoT.</p>
+            <p>O sistema oferece mapas de risco, alertas em tempo real e rotas de fuga baseadas em dados de tráfego.</p>
+        </section>
+        <section id="objetivos2">
+            <h2>Objetivos</h2>
+            <p>Salvar vidas por meio da antecipação de desastres e melhorar a resposta emergencial das autoridades locais.</p>
+            <p>Reduzir prejuízos econômicos com planejamento urbano e alertas eficazes em tempo real.</p>
+            <img id="objetivos-img" src="images/objetivos.jpg" alt="Equipe de resgate resgatando os cidadãos" />
+        </section>
+        <section id="publico2">
+            <h2>Público-Alvo</h2>
+            <p>População em áreas de risco, Defesa Civil, prefeituras e ONGs atuando em gestão de emergências urbanas.</p>
+            <p>Também impacta cidadãos com interesse em segurança urbana e prevenção de riscos hidrológicos.</p>
+        </section>
+        <section id="beneficios2">
+            <h2>Benefícios</h2>
+            <p>Redução de impactos com alertas personalizados, rotas de fuga e dados integrados para resposta rápida.</p>
+            <p>Inclusão digital com aplicativo offline, integração com WhatsApp e comunicação acessível.</p>
+        </section>
+        <section id="uso2">
+            <h2>Uso no Dia a Dia</h2>
+            <p>Usuários recebem alertas antecipados, veem mapas atualizados e registram ocorrências de forma colaborativa.</p>
+            <p>Prefeituras acessam dashboards com dados em tempo real e gerenciam planos de evacuação.</p>
+        </section>
+        <section id="slideshow2">
+            <h2>SlideShow</h2>
+            <div class="slideshow-container">
+                <img class="slide" src="images/slide1.jpg">
+                <img class="slide" src="images/slide2.jpg">
+                <img class="slide" src="images/slide3.jpg">
+                <button class="prev" onclick="plusSlides(-1)" aria-label="Anterior">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)" aria-label="Próximo">&#10095;</button>
+                <div class="dots" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+        <section id="quiz2">
+            <h2>Quiz</h2>
+            <form id="quiz_form">
+                <p>1. Quantas inundações foram registradas no Brasil entre 1991 e 2022?</p>
+                <p><input type="radio" name="q1" value="a"> 2 mil</p>
+                <p><input type="radio" name="q1" value="b"> 21 mil</p>
+                <p><input type="radio" name="q1" value="c"> 8 mil</p>
+                <p><input type="radio" name="q1" value="d"> 53 mil</p><br/>
+                <p>2. Qual foi o estado mais afetado por enchentes em 2024 até maio?</p>
+                <p><input type="radio" name="q2" value="a"> Rio Grande do Sul</p>
+                <p><input type="radio" name="q2" value="b"> São Paulo</p>
+                <p><input type="radio" name="q2" value="c"> Rio de Janeiro</p>
+                <p><input type="radio" name="q2" value="d"> Amazonas</p><br/>
+                <p>3. Qual é o prejuízo médio anual estimado pelo Banco Mundial com desastres naturais no Brasil?</p>
+                <p><input type="radio" name="q3" value="a"> R$ 10 bilhões</p>
+                <p><input type="radio" name="q3" value="b"> R$ 7 bilhões</p>
+                <p><input type="radio" name="q3" value="c"> R$ 8 bilhões</p>
+                <p><input type="radio" name="q3" value="d"> R$ 15 bilhões</p><br/>
+                <p>4. Qual é a principal causa de mortes por desastres naturais no Brasil?</p>
+                <p><input type="radio" name="q4" value="a"> Secas</p>
+                <p><input type="radio" name="q4" value="b"> Deslizamentos de terra</p>
+                <p><input type="radio" name="q4" value="c"> Enchentes</p>
+                <p><input type="radio" name="q4" value="d"> Furacões</p><br/>
+                <p>5. Qual região brasileira que mais sofre com enchentes?</p>
+                <p><input type="radio" name="q5" value="a"> Norte</p>
+                <p><input type="radio" name="q5" value="b"> Sul</p>
+                <p><input type="radio" name="q5" value="c"> Centro-Oeste</p>
+                <p><input type="radio" name="q5" value="d"> Sudeste</p><br/>
+                <p>6. O que é uma enchente?</p>
+                <p><input type="radio" name="q6" value="a"> Aumento da temperatura em regiões urbanas</p>
+                <p><input type="radio" name="q6" value="b"> Movimento de placas tectônicas</p>
+                <p><input type="radio" name="q6" value="c"> Acúmulo excessivo de água que transborda rios ou alaga ruas</p>
+                <p><input type="radio" name="q6" value="d"> Formação de ventos fortes no litoral</p><br/>
+                <p>7. Qual cidade brasileira é frequentemente afetada por enchentes, especialmente no verão?</p>
+                <p><input type="radio" name="q7" value="a"> Brasília</p>
+                <p><input type="radio" name="q7" value="b"> São Paulo</p>
+                <p><input type="radio" name="q7" value="c"> Rio de Janeiro</p>
+                <p><input type="radio" name="q7" value="d"> Salvador</p><br/>
+                <p>8. Qual é o papel das bacias hidrográficas no controle de enchentes?</p>
+                <p><input type="radio" name="q8" value="a"> Drenar a água das chuvas para rios e oceanos</p>
+                <p><input type="radio" name="q8" value="b"> Ajudam a armazenar água e controlar o fluxo</p>
+                <p><input type="radio" name="q8" value="c"> Impedir a formação de rios</p>
+                <p><input type="radio" name="q8" value="d"> Controlar a erosão do solo</p><br/>
+                <p>9. Qual das seguintes ações humanas contribui para o aumento das enchentes?</p>
+                <p><input type="radio" name="q9" value="a"> Construção de barragens</p>
+                <p><input type="radio" name="q9" value="b"> Reciclagem de lixo</p>
+                <p><input type="radio" name="q9" value="c"> Descarte irregular de lixo em bueiros</p>
+                <p><input type="radio" name="q9" value="d"> Construção de reservatórios</p><br/>
+                <p>10. A urbanização desordenada contribui para as enchentes porque:</p>
+                <p><input type="radio" name="q10" value="a"> Reduz o escoamento natural da água</p>
+                <p><input type="radio" name="q10" value="b"> Melhora a drenagem natural</p>
+                <p><input type="radio" name="q10" value="c"> Reduz a quantidade de água nos rios</p>
+                <p><input type="radio" name="q10" value="d"> Aumenta o número de habitantes</p><br/>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="resultado"></p>
+        </section>
+        <section id="contato2">
+            <h2>Entre em Contato</h2>
+            <form id="form-contato">
+                <p>Nome: <input type="text" name="nome" id="nome" required></p>
+                <p>Email: <input type="email" name="email" id="email" required></p>
+                <p>Mensagem:<br/>
+                    <textarea name="mensagem" id="mensagem" rows="4" required></textarea>
+                </p>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="form-msg"></p>
+        </section>
+        <button onclick="trocarFundo()">Trocar Fundo</button>
+    </main>
+    <footer>
+        <p>© 2025 HidroSafe. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

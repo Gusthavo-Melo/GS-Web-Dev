@@ -1,9 +1,9 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 #toggle {
@@ -35,7 +35,10 @@ body {
     width: 100%;
     height: 100%;
     background-color: #1565c0;
-    top: -100%; left: 0; right: 0; bottom: 0;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     transform: scale(0);
@@ -59,7 +62,7 @@ body {
 .nav nav a {
     text-decoration: none;
     color: white;
-    font-weight: bold;    
+    font-weight: bold;
     font-size: 2em;
     display: block;
     margin: 1.5em 0;
@@ -75,10 +78,12 @@ body {
     transform: rotate(-45deg);
     margin-top: 25px;
 }
+
 #toggle:checked + .hamburger .bottom-bun {
     opacity: 0;
     transform: rotate(45deg);
 }
+
 #toggle:checked + .hamburger .meat {
     transform: rotate(45deg);
     margin-top: -7px;
@@ -99,63 +104,67 @@ body {
 }
 
 @media (min-width: 901px) {
-    .hamburger, #toggle, .nav {
+    .hamburger,
+    #toggle,
+    .nav {
         display: none !important;
     }
     header nav {
         display: block !important;
     }
 }
+
 #enchente {
-  width: 30%;
-  height: auto;
-  border-radius: 8px;
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
 }
 
 #objetivos-img {
-  width: 30%;
-  height: auto;
-  border-radius: 8px;
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
 }
 
 #uso-diario {
-  width: 20%;
-  height: auto;
-  border-radius: 8px;
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
 }
+
 nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  background-color: #1565c0;
-  padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #1565c0;
+    padding: 1rem;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
 }
 
 section img {
-  width: 100%;
-  height: auto;
-  margin-top: 1rem;
-  border-radius: 8px;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
 }
 
 footer {
-  text-align: center;
-  background: #1565c0;
-  color: white;
-  padding: 1rem;
-  margin-top: 2rem;
+    text-align: center;
+    background: #1565c0;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
 #problema:hover,
@@ -180,6 +189,7 @@ footer {
     background: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
 .slide {
     display: none;
     width: 100%;
@@ -187,12 +197,15 @@ footer {
     transition: opacity 0.7s ease;
     object-fit: cover;
 }
+
 .slide.active {
     display: block;
     opacity: 1;
     z-index: 1;
 }
-.prev, .next {
+
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -209,12 +222,21 @@ footer {
     transition: background 0.3s;
     z-index: 2;
 }
-.prev:hover, .next:hover {
+
+.prev:hover,
+.next:hover {
     background: #1565c0;
     color: #fff;
 }
-.prev { left: 10px; }
-.next { right: 10px; }
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
 .dots {
     position: absolute;
     bottom: 15px;
@@ -222,6 +244,7 @@ footer {
     text-align: center;
     z-index: 2;
 }
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -232,7 +255,9 @@ footer {
     display: inline-block;
     transition: background 0.3s;
 }
-.dot.active, .dot:hover {
+
+.dot.active,
+.dot:hover {
     background-color: #1565c0;
 }
 
@@ -244,7 +269,8 @@ form {
     margin: auto;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
