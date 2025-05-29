@@ -163,13 +163,14 @@ footer {
 #objetivos:hover,
 #publico:hover,
 #beneficios:hover,
-#uso:hover {
-  color: #000000;
+#uso:hover,
+#slideshow:hover,
+#quiz:hover,
+#contato:hover {
+    color: #000000;
+    transition: color 0.5s ease;
 }
 
-#problema, #tecnologia, #objetivos, #publico, #beneficios, #uso {
-  transition: color 0.5s ease;
-}
 .slideshow-container {
     position: relative;
     max-width: 800px;
