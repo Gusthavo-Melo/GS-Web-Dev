@@ -43,3 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
     showSlides(slideIndex);
     autoSlides();
 });
+
+// Troca de fundo
+    const fundos = ["#f4f4f4", "#e3f2fd", "#fff3e0"];
+    let atual = 0;
+    function trocarFundo() {
+        atual = (atual + 1) % fundos.length;
+        document.body.style.backgroundColor = fundos[atual];
+    }
