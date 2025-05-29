@@ -69,3 +69,17 @@ document.getElementById("form-contato").addEventListener("submit", function(even
         feedback.style.color = "green";
         this.reset();
     });
+
+     // Quiz
+    document.getElementById("quiz_form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const respostas = { q1: "b"};
+        let acertos = 0;
+        for (let i in respostas) {
+            const respostaUsuario = document.querySelector(`input[name="${i}"]:checked`);
+            if (respostaUsuario && respostaUsuario.value === respostas[i]) {
+                acertos++;
+            }
+        }
+        document.getElementById("resultado").innerText = `Você acertou ${acertos} perguntas!`;
+    });
