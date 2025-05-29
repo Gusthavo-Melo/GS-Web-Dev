@@ -51,3 +51,21 @@ document.addEventListener("DOMContentLoaded", function() {
         atual = (atual + 1) % fundos.length;
         document.body.style.backgroundColor = fundos[atual];
     }
+
+document.getElementById("form-contato").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const nome = document.getElementById("nome").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const mensagem = document.getElementById("mensagem").value.trim();
+        const feedback = document.getElementById("form-msg");
+
+        if (!nome || !email || !mensagem) {
+            feedback.textContent = "Por favor, preencha todos os campos.";
+            feedback.style.color = "red";
+            return;
+        }
+
+        feedback.textContent = "Mensagem enviada com sucesso!";
+        feedback.style.color = "green";
+        this.reset();
+    });
