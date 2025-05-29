@@ -79,6 +79,22 @@
     </section>
   </main>
 
+  <section id="slideshow">
+    <h2>SlideShow</h2>
+    <div class="slideshow-container">
+        <img class="slide" src="images/slide1.jpg">
+        <img class="slide" src="images/slide2.jpg">
+        <img class="slide" src="images/slide3.jpg">
+        <button class="prev" onclick="plusSlides(-1)" aria-label="Anterior">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)" aria-label="Próximo">&#10095;</button>
+        <div class="dots" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
   <footer>
     <p>© 2025 HidroSafe. Todos os direitos reservados.</p>
   </footer>

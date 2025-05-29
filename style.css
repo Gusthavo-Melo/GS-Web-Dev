@@ -170,3 +170,67 @@ footer {
 #problema, #tecnologia, #objetivos, #publico, #beneficios, #uso {
   transition: color 0.5s ease;
 }
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.7s ease;
+    object-fit: cover;
+}
+.slide.active {
+    display: block;
+    opacity: 1;
+    z-index: 1;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px;
+    margin-top: -22px;
+    color: #1565c0;
+    font-weight: bold;
+    font-size: 2em;
+    border: none;
+    background: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    user-select: none;
+    transition: background 0.3s;
+    z-index: 2;
+}
+.prev:hover, .next:hover {
+    background: #1565c0;
+    color: #fff;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+.dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background 0.3s;
+}
+.dot.active, .dot:hover {
+    background-color: #1565c0;
+}

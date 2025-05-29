@@ -1,0 +1,45 @@
+let slideIndex = 1;
+let slideTimer = null;
+const slides = document.getElementsByClassName("slide");
+const dots = document.getElementsByClassName("dot");
+
+function showSlides(n) {
+    if (!slides.length) return;
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+        slides[i].style.opacity = 0;
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+    slides[slideIndex - 1].classList.add("active");
+    slides[slideIndex - 1].style.opacity = 1;
+    dots[slideIndex - 1].classList.add("active");
+}
+
+function plusSlides(n) {
+    clearTimeout(slideTimer);
+    showSlides(slideIndex += n);
+    autoSlides();
+}
+
+function currentSlide(n) {
+    clearTimeout(slideTimer);
+    showSlides(slideIndex = n);
+    autoSlides();
+}
+
+function autoSlides() {
+    slideTimer = setTimeout(() => {
+        showSlides(++slideIndex);
+        autoSlides();
+    }, 3000);
+}
+
+// Inicialização do slideshow
+document.addEventListener("DOMContentLoaded", function() {
+    showSlides(slideIndex);
+    autoSlides();
+});
