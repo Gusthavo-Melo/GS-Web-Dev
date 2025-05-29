@@ -1,0 +1,73 @@
+#enchente {
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#objetivos-img {
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#uso-diario {
+  width: 20%;
+  height: auto;
+  border-radius: 8px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #1565c0;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  background: #1565c0;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+#problema:hover,
+#tecnologia:hover,
+#objetivos:hover,
+#publico:hover,
+#beneficios:hover,
+#uso:hover {
+  color: #000000;
+}
+
+#problema, #tecnologia, #objetivos, #publico, #beneficios, #uso {
+  transition: color 0.5s ease;
+}
